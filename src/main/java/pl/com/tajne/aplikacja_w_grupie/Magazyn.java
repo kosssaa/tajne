@@ -13,5 +13,7 @@ public class Magazyn {
                 "mapaProduktow=" + mapaProduktow +
                 ", mapaZamowien=" + mapaZamowien +
                 '}';
+
+
     }
 }

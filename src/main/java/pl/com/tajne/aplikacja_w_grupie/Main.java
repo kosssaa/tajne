@@ -1,5 +1,6 @@
 package pl.com.tajne.aplikacja_w_grupie;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
@@ -27,15 +28,17 @@ public class Main {
                     int iloscProduktu = scanner.nextInt();
                     int j = 1;
 
-                    //TODO dodanie produktu to Mapy(?) - wykonane
                     Produkt produkt = new Produkt(nazwaProduktu, cenaProduktu, iloscProduktu, false);
-                    magazyn.mapaProduktow.put(produkt, j++);
+                    magazyn.mapaZamowien.put(nazwaProduktu, produkt);
                 }
                 String numerZamowienia = "GD" + random.ints(1, (300 + 1)).findFirst().getAsInt();
 
-                System.out.println("Zamówienie zostało złożone. Numer zamówienia" + numerZamowienia);
+                System.out.println("Zamówienie zostało złożone. Numer zamówienia " + numerZamowienia);
 
 //TODO zrobić poprawne wypisanie
+
+//                System.out.println(Arrays.asList(magazyn.mapaProduktow));
+//                System.out.println(magazyn.mapaProduktow.entrySet());
 //                magazyn.mapaProduktow.entrySet().forEach(produktyMapa -> {
 //                    System.out.println(produktyMapa.getKey() + " " + produktyMapa.getValue());
 //                });
@@ -45,6 +48,7 @@ public class Main {
             case "dodaj dostawe":
                 System.out.println("Podaj numer zamówienia");
                 String zamowienieDoDodania = scanner.nextLine();
+//                Zamowienie zamowienie = new Zamowienie(zamowienieDoDodania,);
 
 
                 for (int i = 0; i < i; i++) {

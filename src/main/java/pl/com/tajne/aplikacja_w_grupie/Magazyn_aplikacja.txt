@@ -1,6 +1,21 @@
 ﻿Stwórz aplikację do zarządzania zamówieniami.
 
+Aplikacja jest dedykowana dla "Pani w sklepie spożywczym".
+Pani zamawia produkty z hurtowni. Pierwszy scenariusz
+(*dodaj zamowienie*) jest wypełnianiem przez Panią w sklepie zamówienia.
+Zamawiamy z hurtowni produkty żeby zapełnić stan magazynowy w sklepie.
 
+*dodaj dostawę* - to komenda którą wywołujemy żeby zaaktualizować
+stan magazynowy. Po odebraniu zamówienia aktualizujemy obiekt
+*zamówienie* w klasie *magazyn*. Oznaczamy tam które produkty
+ (w obiekcie zamówienie) dotarły
+ (zmieniamy dla każdego pola wartość *czyDostarczony*).
+
+Należy podać (*ręcznie*) numer faktury i uzupełnić ją w obiekcie
+zamówienia. Program powinien pytać czy chcemy
+dodać datę i godzinę ręcznie (użyć datetimeformatter)
+czy wygenerować obecną. Na koniec aplikacja powinna informować
+o ewentualnych opóźnieniach zamówienia (więcej info w treści polecenia)
 
 Produkt, klasa, pola:
 - nazwa
